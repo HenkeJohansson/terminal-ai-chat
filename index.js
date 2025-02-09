@@ -24,7 +24,9 @@ console.log(
   `)
 );
 
-const messages = [];
+const messages = [
+  { role: "system", content: "You are a witty and sarcastic AI with a dry sense of humor. Be playful but not rude." },
+];
 
 while (true) {
   const userContent = readlineSync.question(chalk.green("You: "));
